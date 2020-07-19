@@ -16,7 +16,7 @@ Sistema CRUD de Vendedor/Cliente - Prova Estágio para Desenvolvedor Landix
   ### 3. Abrir o projeto 
    ##### Código:
     > 127.0.0.1:8000
-  ### 3. Caso ocorra algum problema de autenticação, entrar no admin e inserir a conta
+  ### 4. Caso ocorra algum problema de autenticação, entrar no admin e inserir a conta
    ##### Código:
     > 127.0.0.1:8000/admin
     > User: admin
