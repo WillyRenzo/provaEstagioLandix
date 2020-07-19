@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Editar Cliente</title>
+
+    <!--CSS E JS IMPORTS / BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- IMPORT FIM -->
+</head>
+<body>
+
+    <!-- NAV INICIO -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{% url 'index' %}">SISTEMA LDXPS</a>
+            </div>
+        </div>
+    </nav>
+    <!-- NAV FIM-->
+
+    <!-- MAIN INICIO -->
+    <div id="main" class="container-fluid">
+        <!-- HEADER INICIO-->
+        <hr />
+        <h3 class="page-header">Editar Cliente</h3>
+        <hr />
+        <!-- HEADER FIM -->
+
+    <!-- FORM INICIO -->
+    <form action="submit/" method="POST">
+    {% csrf_token %}
+    <div class="row">
+        <div class="form-group col-md-3">
+            <label for="nome">Nome: </label><br>
+            {{ form.nome }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-2">
+            <label for="tipo">Tipo: </label><br>
+            {{ form.tipo }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-2">
+            <label for="cod_vendedor">Código do vendedor: </label><br>
+            {{ form.cod_vendedor }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-2">
+            <label for="limite">Limite de crédito: </label><br>
+            {{ form.limite }}
+        </div>
+    </div>
+	<div class="row">
+	    <div class="col-md-12">
+	        <button type="submit" class="btn btn-primary">Editar</button>
+            <a href="{% url 'delete_client' pk=cod_cliente %}" class="btn btn-default">Excluir</a>
+	    </div>
+	</div>
+    </form>
+    <!-- FORM FIM-->
+    </div>
+    <!-- MAIN FIM-->
+
+
+</body>
+</html>
