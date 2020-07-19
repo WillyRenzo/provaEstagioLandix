@@ -1,6 +1,6 @@
 # Prova de Desenvolvedor Estágio Landix
 
-Sistema CRUD de Vendedor/Cliente - Prova Estágio para Desenvolvedor Landix
+Sistema CRUD de Vendedor/Cliente - Prova Estágio para Desenvolvedor Landix.
 
 ## Frameworks/Linguagens utilizadas:
 - DJANGO (Python)
