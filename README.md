@@ -1,4 +1,4 @@
-# provaEstagioLandix
+# Prova de Desenvolvedor Estagio Landix
 
 Sistema CRUD de Vendedor/Cliente - Prova Estágio para Desenvolvedor Landix
 
